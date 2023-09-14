@@ -1,36 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Pau+Cin+Hau&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Noto Sans Pau Cin Hau", sans-serif;
 }
 
-body{
-    background-color: black;
-    font-family: sans-serif;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0 30px;
+  background-color: #0a419d;
+  /* background-color: #0000c4; */
 }
 
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
+.logo {
+  height: 50px;
+  margin: 0px 30px;
 }
 
-.logo{
-    height: 60px;
+.navbar,
+.navbar-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav{
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
-    align-items: center;
+.navbar {
+  gap: 100px;
+  margin: 0 70px;
 }
 
-ul a{
-    color: black;
+.navbar-list a {
+  color: white;
+  font-size: 14px;
 }
 
+.navbar-list li:first-child > a {
+  font-weight: 600;
+}
+
+main {
+  background: #00416a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+/* HERO SECTION */
+#hero {
+  margin-top: 50px;
+  padding: 50px 0;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  width: 50%;
+  font-weight: 800;
+  color: white;
+}
+
+.hero-info p {
+  font-size: 14px;
+  width: 80%;
+  color: white;
+}
+
+.hero-info p > span {
+  font-weight: 800;
+}
+
+.hero-info .product {
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #db0a40;
+  padding: 8px 0;
+  width: 120px;
+  text-align: center;
+}
+
+.hero-info .comp {
+  border-radius: 10px;
+  font-size: 16px;
+  color: black;
+  background-color: gainsboro;
+  padding: 8px 0;
+  width: 120px;
+  text-align: center;
+}
+
+.hero-links {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-img {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-img img {
+  border-radius: 10px;
+}
+
+/* ABOUT  */
+#about {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #00416a;
+}
+
+.about-container {
+  padding: 30px 80px;
+  margin: 0px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid white;
+}
+
+.about-container p {
+  margin: 0px 80px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
