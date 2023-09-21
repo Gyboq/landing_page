@@ -163,7 +163,6 @@ main {
 
 /* CARDS  */
 #info {
-  max-width: 1200px;
   padding: 40px 0px;
   display: flex;
   justify-content: center;
@@ -235,7 +234,6 @@ main {
 }
 
 #contact {
-  max-width: 1200px;
   padding: 70px 0px;
   display: flex;
   justify-content: center;
